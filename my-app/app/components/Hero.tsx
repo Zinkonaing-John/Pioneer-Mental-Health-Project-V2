@@ -16,6 +16,17 @@ export default function Hero() {
               <button className="bg-white text-primary px-5 py-2 rounded hover:bg-gray-100">
                 Learn More
               </button>
+          
+              <button
+            className="inline-block cursor-pointer rounded-md bg-gray-800 px-4 py-3 text-center text-sm font-semibold uppercase text-white transition duration-200 ease-in-out hover:bg-gray-900">
+              DaisyUI
+            </button>
+
+            <button
+            className="inline-block cursor-pointer rounded-md bg-gray-800 px-4 py-3 text-center text-sm font-semibold uppercase text-white transition duration-200 ease-in-out hover:bg-gray-900">
+              DaisyUI2
+            </button>
+
             </div>
           </div>
           <div className="flex justify-center">

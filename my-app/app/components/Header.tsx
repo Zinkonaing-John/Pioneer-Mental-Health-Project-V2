@@ -58,6 +58,8 @@ export default function Header() {
             <button className="w-full bg-purple-600 text-white px-4 py-2 rounded-full text-sm">
               Register
             </button>
+
+            
           </div>
         </div>
       )}
