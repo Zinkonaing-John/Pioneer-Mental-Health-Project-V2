@@ -1,6 +1,7 @@
-<<<<<<< HEAD
+ HEAD
+ HEAD
 # Pioneer-Mental-Health-Project-V2
-=======
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -38,3 +39,8 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 >>>>>>> main
+=======
+# Pioneer-Mental-Health-Project-V2# Pioneer Mental Health Project
+
+This project uses Next.js and Tailwind CSS...
+>>>>>>> 6637a431aadd0dccea5e47d4ec17af70a8cc70c4
