@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 
 export default function HomePage() {
   return (
-    <>
+    <main>
       <Header/>   
       <Hero />
       <Services />
@@ -18,6 +18,6 @@ export default function HomePage() {
       <Blog />
       <Newsletter />
       <Footer />
-    </>
+    </main>
   );
 }
