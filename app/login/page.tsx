@@ -34,11 +34,10 @@ const LoginPage = () => {
 
         {/* Right: Login Form */}
         <div className="bg-white rounded-3xl shadow-lg p-8 flex-1">
-        <div className="text-center mb-6">
-  <h2 className="text-2xl font-bold mb-1">Welcome Back</h2>
-  <p className="text-sm text-gray-600">Login to access your support resources</p>
-</div>
-
+          <div className="text-center mb-6">
+            <h2 className="text-2xl font-bold mb-1">Welcome Back</h2>
+            <p className="text-sm text-gray-600">Login to access your support resources</p>
+          </div>
 
           <form className="space-y-4">
             <div>
@@ -96,4 +95,3 @@ const LoginPage = () => {
 };
 
 export default LoginPage;
- 

@@ -38,7 +38,7 @@ export default function Header() {
           Sign in
         </button>
         <button className="text-sm text-purple-600 border border-purple-600 px-4 py-2 rounded-full hover:bg-purple-600 hover:text-white">
-          Register
+        <Link href="/login">Register</Link>
         </button>
       </div>
   
