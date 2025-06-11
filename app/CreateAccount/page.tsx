@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { useState } from 'react';
+import Link from "next/link";
+import { useState } from "react";
 
 const CreateAccountForm = () => {
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -15,7 +15,9 @@ const CreateAccountForm = () => {
   return (
     <div className="flex items-center justify-center min-h-screen bg-blue-50">
       <div className="bg-white p-8 rounded-xl shadow-md w-full max-w-sm text-center relative">
-        <h2 className="text-2xl font-bold text-black mb-6">Create an account</h2>
+        <h2 className="text-2xl font-bold text-black mb-6">
+          Create an account
+        </h2>
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <input
@@ -36,7 +38,7 @@ const CreateAccountForm = () => {
           />
           <div className="flex items-center justify-between">
             <p className="text-sm text-gray-600">
-              <strong>Already have an account?</strong>{' '}
+              <strong>Already have an account?</strong>{" "}
               <a href="/login" className="text-blue-600 hover:underline">
                 Log in
               </a>

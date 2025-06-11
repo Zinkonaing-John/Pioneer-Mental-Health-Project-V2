@@ -9,8 +9,8 @@ import Footer from "./components/Footer";
 
 export default function HomePage() {
   return (
-    <main>
-      <Header/>   
+    <main className="bg-white">
+      <Header />
       <Hero />
       <Services />
       <Resources />
