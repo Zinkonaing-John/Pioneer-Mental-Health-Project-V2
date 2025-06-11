@@ -1,12 +1,26 @@
-import React from "react";
+import { RoleCard } from "../components/RoleCard";
 
-const page = () => {
+export default function Home() {
   return (
-    <>
-      <h1>Hello World</h1>
-      <p>I am Zin Ko Naing</p>
-    </>
-  );
-};
+    <div className="min-h-screen flex items-center justify-center bg-[#eaf6f8]">
+      <main className="flex flex-col items-center gap-6 py-12 px-4">
+        <RoleCard
+          label="College Student"
+          image="/images/student.png"
+          href="/survey/student"
+        />
+        <RoleCard
+          label="Staff"
+          image="/images/staff.png"
+          href="/survey/staff"
+        />
 
-export default page;
+        <RoleCard
+          label="Teacher / Professor"
+          image="/images/teacher.png"
+          href="/survey/teacher"
+        />
+      </main>
+    </div>
+  );
+}
