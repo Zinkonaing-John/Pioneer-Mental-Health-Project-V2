@@ -1,15 +1,16 @@
+"use client";
+
 import { JSX } from "react";
+import Link from "next/link";
 import { FaChartPie, FaUser, FaSignOutAlt, FaLightbulb } from "react-icons/fa";
-import Link from "next/link"; // <-- only one import statement for Link
 
 type SidebarProps = {
   activePage: string;
-  // Remove setActivePage if you don't need it anymore
 };
 
 export default function Sidebar({ activePage }: SidebarProps) {
   return (
-    <aside className="w-64 bg-white shadow-lg p-6 flex flex-col justify-between">
+    <aside className="w-64 bg-white shadow-lg p-6 flex flex-col justify-between min-h-screen">
       <div className="space-y-6">
         <h2 className="text-3xl font-serif font-bold text-black">Bloom</h2>
 
@@ -23,7 +24,7 @@ export default function Sidebar({ activePage }: SidebarProps) {
 
         <nav className="space-y-3">
           <NavItem
-            href="#"
+            href="/dashboard"
             icon={<FaChartPie />}
             label="Dashboard"
             active={activePage === "Dashboard"}
@@ -41,7 +42,7 @@ export default function Sidebar({ activePage }: SidebarProps) {
             active={activePage === "Account"}
           />
           <NavItem
-            href="#"
+            href="/logout"
             icon={<FaSignOutAlt />}
             label="Log-out"
             active={activePage === "Log-out"}
@@ -65,8 +66,8 @@ function NavItem({ href, icon, label, active = false }: NavItemProps) {
       href={href}
       className={`flex items-center gap-3 px-4 py-2 rounded-full cursor-pointer transition-all ${
         active
-          ? "bg-pink-400 text-white"
-          : "hover:bg-purple-500 hover:text-white text-gray-700"
+          ? "bg-purple-500 text-white"
+          : "hover:bg-purple-100 text-gray-700"
       }`}
     >
       {icon}

@@ -77,8 +77,8 @@ export default function SelfDiscoveryPage() {
         <div className="flex justify-between items-start">
           <div className="flex items-center justify-between w-full p-6 bg-white rounded-2xl shadow-md">
             <div>
-              <p className="text-sm">Take a deep breath</p>
-              <h2 className="text-2xl font-bold mt-1">
+              <p className="text-sm text-black">Take a deep breath</p>
+              <h2 className="text-2xl font-bold mt-1 text-black">
                 Stress Less, Live Better
               </h2>
               <button className="mt-4 px-4 py-2 bg-teal-400 text-white rounded-full hover:bg-teal-500">
@@ -97,20 +97,20 @@ export default function SelfDiscoveryPage() {
 
         <div className="bg-green-200 p-6 rounded-2xl shadow-md max-w-xl">
           <h3 className="text-xl font-bold text-blue-700">Self Check-up</h3>
-          <p className="mt-2 text-sm">
+          <p className="mt-2 text-sm text-black">
             Check your condition by answering these questions
           </p>
           <div className="w-full h-1 bg-blue-400 my-4"></div>
-          <p className="text-sm">3/10 answered</p>
-          <button className="mt-4 px-6 py-2 bg-white rounded-full shadow text-black font-medium flex items-center gap-2">
+          <p className="text-sm text-black">3/10 answered</p>
+          <button className="mt-4 px-6 py-2 bg-white  rounded-full shadow text-black font-medium flex items-center gap-2">
             Continue <span className="text-lg">→</span>
           </button>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl">
           <div className="bg-blue-200 p-6 rounded-2xl shadow-md">
-            <h4 className="text-lg font-medium mb-4">Daily Tasks</h4>
-            <ul className="space-y-2">
+            <h4 className="text-lg font-medium mb-4 text-white">Daily Tasks</h4>
+            <ul className="space-y-2 text-white ">
               {[
                 "Wake up at 6",
                 "Read a book",
@@ -139,8 +139,8 @@ export default function SelfDiscoveryPage() {
           <h4 className="text-lg font-bold text-blue-800 mb-2">
             Take Your MBTI Test
           </h4>
-          <p className="text-sm font-medium mb-1">Why It Matters:</p>
-          <p className="text-sm">
+          <p className="text-sm font-medium mb-1 text-black">Why It Matters:</p>
+          <p className="text-sm text-black">
             MBTI insights can support personal growth, emotional awareness, and
             how you relate to others.
           </p>

@@ -74,7 +74,7 @@ export default function AccountPage({ activePage }: SidebarProps) {
           <div className="flex gap-6 items-start">
             <div className="w-32 h-32 relative rounded overflow-hidden">
               <Image
-                src="/profile.jpg"
+                src="/images/profile.png"
                 alt="Profile"
                 layout="fill"
                 objectFit="cover"
@@ -82,7 +82,7 @@ export default function AccountPage({ activePage }: SidebarProps) {
               />
             </div>
             <div>
-              <h2 className="text-xl font-semibold">Htoi Bu</h2>
+              <h2 className="text-xl font-semibold text-black">Htoi Bu</h2>
               <div className="mt-2 text-sm text-gray-700 space-y-1">
                 <p>
                   <span className="font-medium">Occupation</span> - Student
@@ -104,17 +104,19 @@ export default function AccountPage({ activePage }: SidebarProps) {
 
         {/* Achievements Section */}
         <div className="mt-10 p-6 bg-purple-100 rounded-2xl shadow-md max-w-xl">
-          <h3 className="text-lg font-semibold mb-4">Achievement and Goals</h3>
-          <div className="space-y-2 text-sm">
-            <div className="flex justify-between">
+          <h3 className="text-lg font-semibold mb-4 text-black">
+            Achievement and Goals
+          </h3>
+          <div className="space-y-2 text-sm text-black">
+            <div className="flex justify-between text-black">
               <span>Medications</span>
               <span>20 mins</span>
             </div>
-            <div className="flex justify-between">
+            <div className="flex justify-between text-black">
               <span>Socializing with friends</span>
               <span>10 mins</span>
             </div>
-            <div className="flex justify-between">
+            <div className="flex justify-between text-black">
               <span>Therapy Session</span>
               <span>30 mins</span>
             </div>
@@ -122,9 +124,9 @@ export default function AccountPage({ activePage }: SidebarProps) {
         </div>
 
         {/* Stats Section */}
-        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl">
-          <div className="bg-green-200 p-6 rounded-2xl shadow-md text-center">
-            <p className="text-lg font-medium mb-2">Sleep</p>
+        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl text-black">
+          <div className="bg-green-200 p-6 rounded-2xl shadow-md text-center text-black">
+            <p className="text-lg font-medium mb-2 text-black">Sleep</p>
             <p>Your Sleep duration today is 7 hours</p>
             <div className="mt-4">
               <p className="text-red-500 font-semibold">7 hrs</p>
