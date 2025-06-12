@@ -1,24 +1,26 @@
-//google-gemini-clone/src/app/api/chat/route.ts
+import OpenAI from "openai";
+import { OpenAIStream, StreamingTextResponse } from "ai";
 
-import { NextResponse } from "next/server";
-import { chattogemini } from "../../utils/geminiHelpers";
-import { ChatHistory, ChatSettings } from "../../../types";
+export const dynamic = "force-dynamic";
 
-export async function POST(request: Request) {
-  // Function logic will go here
-  try {
-    const { userMessage, history, settings } = (await request.json()) as {
-      userMessage: string;
-      history: ChatHistory;
-      settings: ChatSettings;
-    };
-    const aiResponse = await chattogemini(userMessage, history, settings);
-    return NextResponse.json({ response: aiResponse });
-  } catch (error) {
-    console.error("API Error:", error);
-    return NextResponse.json(
-      { error: "Error obtaining the AI model's response." },
-      { status: 500 }
-    );
-  }
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY!,
+});
+
+export async function POST(req: Request) {
+  // Extract the `messages` from the body of the request
+  const { messages } = await req.json();
+
+  // Request the OpenAI API for the response based on the prompt
+  const response = await openai.chat.completions.create({
+    model: "gpt-3.5-turbo",
+    stream: true,
+    messages: messages,
+  });
+
+  // Convert the response into a friendly text-stream
+  const stream = OpenAIStream(response as any);
+
+  // Respond with the stream
+  return new StreamingTextResponse(stream);
 }

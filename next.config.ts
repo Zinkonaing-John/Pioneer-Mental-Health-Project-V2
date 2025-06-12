@@ -9,7 +9,7 @@ const nextConfig: import("next").NextConfig = {
 };
 
 module.exports = {
-  output: "export", // your existing option
+  //output: "export", // your existing option
   images: {
     unoptimized: true, // disables the image optimization API
   },
