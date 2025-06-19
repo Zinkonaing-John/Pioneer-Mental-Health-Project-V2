@@ -9,8 +9,8 @@ import Footer from "./components/Footer";
 
 export default function HomePage() {
   return (
-    <>
-      <Header/>   
+    <main className="bg-white">
+      <Header />
       <Hero />
       <Services />
       <Resources />
@@ -18,6 +18,6 @@ export default function HomePage() {
       <Blog />
       <Newsletter />
       <Footer />
-    </>
+    </main>
   );
 }
